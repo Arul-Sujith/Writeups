@@ -1,1 +1,17 @@
+RSA (Rivest-Shamir-Adleman)
+  1)RsaCtfTool
+  2)Yafu
+  3)https://www.dcode.fr/rsa-cipher
+ 
+XOR 
+  encrypted_text = bytes.fromhex('cipher-text')
+  key = bytes.fromhex('key')
 
+  # Decrypt the encrypted text by XOR'ing it with the key
+  decrypted_text = bytes([encrypted_byte ^ key_byte for encrypted_byte, key_byte in zip(encrypted_text, key)])
+
+  print(decrypted_text)
+  
+ 
+
+  
